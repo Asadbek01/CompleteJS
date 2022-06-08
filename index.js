@@ -33,7 +33,7 @@ function Greetings() {
   const date = new Date();
   const now = date.getHours();
   if (now < 12) {
-    console, log("Morning");
+    console.log("Morning");
   } else if (now < 18) {
     console.log("Good Afternoon");
   } else {

@@ -41,3 +41,14 @@ function Greetings() {
   }
 }
 Greetings();
+
+// create Function FizzBuzz  that should show a string seperetaly every 2 other output
+Header("question number 4");
+const FizBuzz = () => {
+  let output = [];
+  let count = 1;
+  output.push(count);
+  count++;
+  console.log(output);
+};
+FizBuzz();

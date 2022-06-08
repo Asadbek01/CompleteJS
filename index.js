@@ -26,3 +26,18 @@ const getDay = () => {
   console.log(result);
 };
 getDay();
+
+//  All you need to do is just get Greetings depending on time
+Header("Question number 3");
+function Greetings() {
+  const date = new Date();
+  const now = date.getHours();
+  if (now < 12) {
+    console, log("Morning");
+  } else if (now < 18) {
+    console.log("Good Afternoon");
+  } else {
+    console.log("Good Evening");
+  }
+}
+Greetings();

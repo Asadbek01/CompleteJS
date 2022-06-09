@@ -80,3 +80,24 @@ function compareTriplates(a, b) {
   return both;
 }
 console.log(compareTriplates([10, 15, 20], [15, 10, 30]));
+
+Header("question Number 7");
+function plusMinus(arr) {
+  let positive = 0;
+  let negative = 0;
+  let zero = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      positive += 1;
+    } else if (arr[i] < 0) {
+      negative += 1;
+    } else {
+      zero += 1;
+    }
+  }
+  let posFrac = (positive / arr.length).toFixed(6);
+  let negFrac = (negative / arr.length).toFixed(6);
+  let zerFrac = (zero / arr.length).toFixed(6);
+  return [posFrac, negFrac, zerFrac];
+}
+console.log(plusMinus([1, 2, -2, -9, 3]));

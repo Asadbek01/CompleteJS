@@ -98,6 +98,7 @@ function plusMinus(arr) {
   let posFrac = (positive / arr.length).toFixed(6);
   let negFrac = (negative / arr.length).toFixed(6);
   let zerFrac = (zero / arr.length).toFixed(6);
-  return [posFrac, negFrac, zerFrac];
+  const total = [posFrac, negFrac, zerFrac];
+  return total;
 }
-console.log(plusMinus([1, 2, -2, -9, 3]));
+console.log(plusMinus([1, 2, -2, -9, 0]));

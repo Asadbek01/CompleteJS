@@ -52,3 +52,31 @@ const FizBuzz = () => {
   console.log(output);
 };
 FizBuzz();
+
+// Complete the simpleArraySum function in the editor below. It must return the sum of the array elements as an integer.
+Header("question number 5");
+function simpleArraySum(ar) {
+  let sum = 0;
+  for (let i = 0; i < ar.length; i++) {
+    sum += ar[i];
+  }
+  return sum;
+}
+
+console.log(simpleArraySum([5, 6, 50]));
+// The rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and the rating for Bob's challenge is the triplet b = (b[0], b[1], b[2]).
+Header("question number 6");
+function compareTriplates(a, b) {
+  let aNumb = 0;
+  let bNumb = 0;
+  for (let i = 0; i < 3; i++) {
+    if (a[i] > b[i]) {
+      aNumb += 1;
+    } else if (a[i] < b[i]) {
+      bNumb += 1;
+    }
+  }
+  const both = [aNumb, bNumb];
+  return both;
+}
+console.log(compareTriplates([10, 15, 20], [15, 10, 30]));

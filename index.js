@@ -102,3 +102,16 @@ function plusMinus(arr) {
   return total;
 }
 console.log(plusMinus([1, 2, -2, -9, 0]));
+
+let obj = {
+  name: "Asadbek",
+  firstName: "Azamjonov",
+};
+
+useEffect(() => {
+  first;
+
+  return () => {
+    second;
+  };
+}, [third]);

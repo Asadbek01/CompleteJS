@@ -122,3 +122,12 @@ function spinalCase(str) {
     .toLowerCase();
 }
 console.log(spinalCase("CamelCase hcsas"));
+// Difference between var let const
+Header("Question number 10");
+
+function f() {
+  let a = 10;
+  console.log(a);
+}
+f();
+console.log(a);

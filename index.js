@@ -149,3 +149,19 @@ f();
 
 // It prints 10
 console.log(a);
+// Main difference is that
+
+let val = 10;
+
+// It is not allowed
+// let a = 10
+
+// It is allowed
+val = 10;
+
+let xd = 10;
+if (true) {
+  let xd = 9;
+  console.log(xd); // It prints 9
+}
+console.log(xd); // It prints 10

@@ -107,8 +107,18 @@ console.log(plusMinus([1, 2, -2, -9, 0]));
 //  but not both. In other words, return the symmetric difference of the two arrays.
 Header("question number 8");
 function diffArrays(arr1, arr2) {
-  return arr1
-    .concat(arr2)
-    .filter((item) => !arr1.includes(item) || !arr2.includes(item));
+  return (
+    arr1, arr2.filter((item) => !arr1.includes(item) || !arr2.includes(item))
+  );
 }
 console.log(diffArrays([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
+// Now, you need to write an algorithm that will convert a string to a spinal case.
+Header("Question Number 9");
+function spinalCase(str) {
+  return str
+    .split(/\s|_|(?=[A-Z])/)
+    .join("-")
+    .toLowerCase();
+}
+console.log(spinalCase("CamelCase hcsas"));

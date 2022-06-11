@@ -124,7 +124,7 @@ function spinalCase(str) {
 console.log(spinalCase("CamelCase hcsas"));
 // Difference between var let const
 Header("Question number 10");
-
+let a = 10;
 function f() {
   let a = 10;
   console.log(a);
@@ -132,7 +132,7 @@ function f() {
 f();
 console.log(a);
 
-let a = 10;
+let b = 10;
 function f() {
   if (true) {
     let b = 9;
@@ -143,7 +143,7 @@ function f() {
 
   // It gives error as it
   // defined in if block
-  console.log(b);
+  // console.log(b);
 }
 f();
 

@@ -103,15 +103,12 @@ function plusMinus(arr) {
 }
 console.log(plusMinus([1, 2, -2, -9, 0]));
 
-let obj = {
-  name: "Asadbek",
-  firstName: "Azamjonov",
-};
-
-useEffect(() => {
-  first;
-
-  return () => {
-    second;
-  };
-}, [third]);
+// This algorithm is about to compare two arrays and return a new array with any items only found in one of the two given arrays,
+//  but not both. In other words, return the symmetric difference of the two arrays.
+Header("question number 8");
+function diffArrays(arr1, arr2) {
+  return arr1
+    .concat(arr2)
+    .filter((item) => !arr1.includes(item) || !arr2.includes(item));
+}
+console.log(diffArrays([1, 2, 3, 5], [1, 2, 3, 4, 5]));

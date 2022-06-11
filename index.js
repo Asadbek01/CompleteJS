@@ -131,6 +131,7 @@ function f() {
 }
 f();
 console.log(a);
+
 let a = 10;
 function f() {
   if (true) {

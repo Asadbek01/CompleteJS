@@ -167,6 +167,16 @@ if (true) {
 console.log(xd); // It prints 10
 Header("Question number 11");
 
+const fib = (n, memo = {}) => {
+  // memo helps us to solve bigger number easily
+  if (n in memo) return memo[n]; // we are finding if there is a similiar tree we dont have calculate it again
+  if (n <= 2) return 1;
+  memo[n] = fib(n - 1) + fib(n - 2); // we are saving
+  return memo[n];
+};
+console.log(fib(7));
+
+Header("Question number 12");
 const gridTraveler = (m, n, memo = {}) => {
   const key = n + "," + m;
   if (key in memo) return memo[key];
@@ -175,11 +185,5 @@ const gridTraveler = (m, n, memo = {}) => {
   memo[key] = gridTraveler(n - 1, m) + (m - 2, n);
   return memo[key];
 };
-
 console.log(gridTraveler(100, 150));
-Header("Question number 12");
-const fib = (n) => {
-  if (n <= 2) return 1;
-  return fib(n - 1) + fib(n - 2);
-};
-console.log(fib(7));
+//  SO now we try to use here memoization as we used above

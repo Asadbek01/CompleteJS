@@ -177,3 +177,9 @@ const gridTraveler = (m, n, memo = {}) => {
 };
 
 console.log(gridTraveler(100, 150));
+Header("Question number 12");
+const fib = (n) => {
+  if (n <= 2) return 1;
+  return fib(n - 1) + fib(n - 2);
+};
+console.log(fib(7));

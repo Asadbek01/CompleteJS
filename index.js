@@ -165,3 +165,14 @@ if (true) {
   console.log(xd); // It prints 9
 }
 console.log(xd); // It prints 10
+
+const gridTraveler = (m, n, memo = {}) => {
+  const key = n + "," + m;
+  if (key in memo) return memo[key];
+  if (n === 1 || m === 1) return 1;
+  if (n === 0 || m === 0) return 0;
+  memo[key] = gridTraveler(n - 1, m) + (m - 2, n);
+  return memo[key];
+};
+
+console.log(gridTraveler(100, 150));

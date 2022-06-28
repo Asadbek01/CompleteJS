@@ -193,13 +193,13 @@ const numbers = [1, 2, 3, 4, 5];
 function getSum(total, num) {
   return total + Math.round(num);
 }
-console.log(numbers.reduce(Math.round()));
-// function getSum(total, num) {
-//   return total + Math.round(num);
-// }
-// const canSum = (num1, [num]) => {
-//   num.reduce(getSum, 0);
-//   if (num1 === accum) return true;
-//   else false;
-// };
-// console.log(7, [4, 3]);
+// console.log(numbers.reduce(Math.round()));
+function getSum(total, num) {
+  return total + Math.round(num);
+}
+const canSum = (num1, [num]) => {
+  num.reduce(getSum, 0);
+  if (num1 === accum) return true;
+  else false;
+};
+console.log(7, [4, 3]);

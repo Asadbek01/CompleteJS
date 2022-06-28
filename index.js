@@ -177,6 +177,7 @@ const fib = (n, memo = {}) => {
 console.log(fib(7));
 
 Header("Question number 12");
+//  SO now we try to use here memoization as we used above
 const gridTraveler = (m, n, memo = {}) => {
   const key = n + "," + m;
   if (key in memo) return memo[key];
@@ -186,4 +187,19 @@ const gridTraveler = (m, n, memo = {}) => {
   return memo[key];
 };
 console.log(gridTraveler(100, 150));
-//  SO now we try to use here memoization as we used above
+Header("Question number 13");
+
+const numbers = [1, 2, 3, 4, 5];
+function getSum(total, num) {
+  return total + Math.round(num);
+}
+console.log(numbers.reduce(Math.round()));
+// function getSum(total, num) {
+//   return total + Math.round(num);
+// }
+// const canSum = (num1, [num]) => {
+//   num.reduce(getSum, 0);
+//   if (num1 === accum) return true;
+//   else false;
+// };
+// console.log(7, [4, 3]);

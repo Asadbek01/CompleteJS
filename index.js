@@ -213,12 +213,3 @@ const strings = ["A", numbersa, "B"];
 numbersa.push(4);
 console.log(strings);
 
-
-const canSumd = (targetNum, numbers) =>{
-  if (targetNum ===0) return true;
-
-  for (let num in numbers){
-    canSumd()
-  }
-
-}

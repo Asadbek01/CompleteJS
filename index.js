@@ -195,12 +195,4 @@ const canSum = (num1, [num]) => {
 };
 console.log(7, [4, 3]);
 
-let numbersa = [1];
-let nd = [2, 3, 4];
-numbersa = [...numbersa, ...nd];
-console.log(numbersa);
-
-const strings = ["A", numbersa, "B"];
-numbersa.push(4);
-console.log(strings);
 

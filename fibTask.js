@@ -36,3 +36,5 @@ const addSu = (n) => {
   return sum;
 };
 console.log(addSu([50, 50]));
+
+

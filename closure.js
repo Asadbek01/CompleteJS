@@ -8,3 +8,12 @@ const init = () => {
 };
 init();
 
+// Lets create another example
+const Closure = (n) => {
+  const name = 50 + n;
+  function logElements() {
+    console.log(name);
+  }
+  logElements();
+};
+Closure(50);

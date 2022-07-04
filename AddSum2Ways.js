@@ -4,7 +4,6 @@
 //     });
 //     return add;
 //   };
-
 //   console.log(addSum([5, 10]));
 
 const addSu = (n) => {

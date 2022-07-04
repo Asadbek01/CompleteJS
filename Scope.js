@@ -22,7 +22,6 @@ console.log(species);
 // - Local variables are those declared inside of a block
 // --------------------------------------------------------------------------
 Header("1st Example with newKeyword var");
-
 // The new keywords let and const, however, are block-scoped.
 // Lets implement this logic with new keywords
 let newSpecies = "let Human";

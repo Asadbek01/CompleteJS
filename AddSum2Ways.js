@@ -14,3 +14,47 @@ const addSu = (n) => {
   return sum;
 };
 console.log(addSu([50, 50]));
+
+// function build(sent){
+//   let base = {}
+//   sent.split(' ').forEach
+// }
+const num = ["1", "2", "4", "3", "-7"];
+
+console.log(num.sort());
+
+function add(a, b) {
+  a += 1;
+  b.push(1);
+}
+const a = 0;
+const b = [];
+add(a, b);
+console.log(5, b);
+
+const f = (n) => (n <= 1 ? 1 : n * f(n - 1));
+console.log(f(5));
+//
+const promises = [1, 2, 3].map(
+  (d) =>
+    new Promise((res) => {
+      setTimeout(() => {
+        res(d);
+      }, d * 1000);
+    })
+);
+Promise.race(promises).then((val) => {
+  console.log(val);
+});
+
+const fs = require("fs").promises;
+
+async function file(filePath) {
+  let fil;
+  try {
+    fil = await fs.open(filePath);
+    let data = file.read();
+  } finally {
+    file.close();
+  }
+}

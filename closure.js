@@ -17,3 +17,12 @@ const Closure = (n) => {
   logElements();
 };
 Closure(50);
+
+const MyName = (name) => {
+  const surname = "Azamjonov" + name;
+  function displayNameAndSurname() {
+    console.log(surname);
+  }
+  displayNameAndSurname;
+};
+console.log(MyName("Asadbek"));

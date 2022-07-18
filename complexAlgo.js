@@ -68,5 +68,16 @@ function firstLast(str){
     return res
   }
   console.log(firstLast("Hello"))
+// Given 2 strings, a and b, return a string of the form short+long+short, with theshorter
+//  string on the outside and the longer string on the inside.
+//  The strings will notbe the same length, but they may be empty (length 0).
+function comboString(a, b){
+    if (a.length < b.length){
+        return  a+b+a
+    }else{
+         return b+a+b
+    }
 
+  }
+  console.log(comboString("Hi" , "Hello"))
 

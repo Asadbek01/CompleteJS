@@ -53,3 +53,20 @@ function extraEnd(str){
     return res+ res +res
   }
   console.log(extraEnd("Hello"))
+//   
+
+function firstTwo(str){
+    const res = str.substring(0,2)
+    
+    return res
+  }
+  console.log(firstTwo("Hello"))
+//Given a string, return a version without the first and last char, so 
+// "Hello" yields "ell". The string length will be at least 2   
+function firstLast(str){
+    const res = str.substring(str.length -1, 1)
+    return res
+  }
+  console.log(firstLast("Hello"))
+
+

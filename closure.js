@@ -26,3 +26,4 @@ const MyName = (name) => {
   displayNameAndSurname;
 };
 console.log(MyName("Asadbek"));
+
